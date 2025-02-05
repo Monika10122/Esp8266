@@ -1,16 +1,21 @@
-# esp8266
+ESP8266 & Flutter LED Controller
 
-A new Flutter project.
+Опис проєкту
 
-## Getting Started
+Цей проєкт поєднує Flutter-додаток та ESP8266 (Arduino) для віддаленого керування світлодіодом і моніторингу сенсорних даних через WebSocket та HTTP-запити.
 
-This project is a starting point for a Flutter application.
+Функціонал:
 
-A few resources to get you started if this is your first Flutter project:
+- Керування світлодіодом через WebSocket-з'єднання.
+- Отримання даних з аналогового датчика через HTTP.
+- Отримання температури та вологості з датчика DHT через HTTP.
+- Відображення поточних значень та історії вимірювань у додатку.
+- Різні режими роботи світлодіода: Manual, Pulse, Strobe, Gradient.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Використані технології:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Flutter (інтерфейс користувача)
+Provider (менеджмент стану)
+WebSocket (керування світлодіодом у реальному часі)
+HTTP-запити (отримання даних із сенсорів)
+ESP8266 (Arduino) (виконання команд та передача даних)
